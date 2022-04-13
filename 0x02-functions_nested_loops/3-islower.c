@@ -9,11 +9,11 @@
 
 int _islower(int c)
 {
-	char c;
+	char kp;
 	int a = 0;
 	int b = 1;
 
-	if (c >= 'a' && c <= 'z')
+	if (kp >= 'a' && kp <= 'z')
 	{
 		_putchar(b + '1');
 	}
