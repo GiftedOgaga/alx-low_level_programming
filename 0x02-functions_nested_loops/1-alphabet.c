@@ -3,7 +3,7 @@
 /**
  * print_alphabet - print out  lower case alphabet from a to z
  *
- * Return: Always 0 .
+ * Return: Always 0 (Success)
  */
 
 void print_alphabet(void)
@@ -15,5 +15,4 @@ void print_alphabet(void)
 		_putchar(alphabet);
 	}
 	_putchar('\n');
-	return (0);
 }
