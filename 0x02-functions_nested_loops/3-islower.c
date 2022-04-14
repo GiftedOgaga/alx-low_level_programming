@@ -4,21 +4,19 @@
  * _islower-check for lowercasw letter
  * @c: The character to be checked
  *
- * Return: Always 0 (Success)
+ * Return: 1 if character is lower case otherwise return 0
  */
 
 int _islower(int c)
 {
-	char kp;
-
-	if (kp >= 'a' && kp <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
-		_putchar('1');
+		return (1);
 		_putchar('\n');
 	}
 	else
 	{
-		_putchar('0');
+		return (0);
 		_putchar('\n');
 	}
 }
