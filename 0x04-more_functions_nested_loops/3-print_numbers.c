@@ -10,7 +10,8 @@ void print_numbers(void)
 {
 	int Alpha;
 
-	for (Alpha >= 0; Alpha < 10; Alpha++)
+	Alpha = 0;
+	for (Alpha = 0; Alpha < 10; Alpha++)
 	{
 		_putchar(Alpha + '0');
 		_putchar('\n');
