@@ -11,9 +11,10 @@ void print_numbers(void)
 	int Alpha = '1';
 
 	Alpha = 0;
-	for (Alpha = 0; Alpha < 10; Alpha++)
+	while (Alpha < 10)
 	{
 		_putchar(Alpha + '0');
-		_putchar('\n');
+		Alpha += 1;
 	}
+	_putchar('\n');
 }
