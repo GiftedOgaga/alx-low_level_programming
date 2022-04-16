@@ -14,6 +14,6 @@ void print_numbers(void)
 	for (Alpha = 0; Alpha < 10; Alpha++)
 	{
 		_putchar(Alpha + '0');
-		_putchar('\n');
 	}
+	putchar('\n');
 }
