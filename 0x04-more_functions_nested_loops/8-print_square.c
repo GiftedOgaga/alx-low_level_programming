@@ -13,7 +13,7 @@ void print_square(int size)
 	k = 0;
 	if (size > 0)
 	{
-		if (k < size)
+		while (k < size)
 		{
 			for (i = 0; i <= size; i++)
 			{
