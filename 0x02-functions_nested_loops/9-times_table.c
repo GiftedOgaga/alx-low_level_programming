@@ -14,7 +14,13 @@ void times_table(void)
 	{
 		for (num = 0; num <= 9; num++)
 		{
-			if (num != 9)
+			if (num == 0)
+			{
+				_putchar(((times * num) / 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+			else if (num != 9 && num != 0)
 			{
 				_putchar(((times * num) / 10) + '0');
 				_putchar(((times * num) % 10) + '0');
