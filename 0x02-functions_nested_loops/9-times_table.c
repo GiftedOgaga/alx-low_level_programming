@@ -20,9 +20,10 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			else if ((times * num == 0 && num == 9) || (times * num < 10 && num == 9))
+			else if ((times * num == 0 && num == 9) || (times * num == 9))
 			{
-				_putchar(((times * num) / 10) + '0');
+				_putchar(' ');
+				_putchar(((times * num) % 10) + '0');
 			}
 			else if (times * num < 10)
 			{
