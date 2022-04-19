@@ -22,8 +22,8 @@ void times_table(void)
 			}
 			else if ((times * num == 0 && num == 9) || (times * num == 9))
 			{
-				_putchar(' ');
 				_putchar(((times * num) % 10) + '0');
+				_putchar(' ');
 			}
 			else if (times * num < 10)
 			{
