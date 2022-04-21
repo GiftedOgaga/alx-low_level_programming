@@ -9,6 +9,7 @@
 void more_numbers(void)
 {
 	int Alpha;
+	int Alp = 0;
 	int k;
 
 	k = 0;
@@ -17,6 +18,11 @@ void more_numbers(void)
 		for (Alpha = 0; Alpha < 10; Alpha++)
 		{
 			_putchar(Alpha + '0');
+		}
+		if (Alp > 9 && Alp < 15)
+		{
+		_putchar(Alp / 10 + '0');
+		_putchar(Alp % 10 + '0');
 		}
 		_putchar('\n');
 		k += 1;
