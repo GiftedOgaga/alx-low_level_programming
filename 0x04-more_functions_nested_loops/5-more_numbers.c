@@ -9,7 +9,6 @@
 void more_numbers(void)
 {
 	int Alpha;
-	int Alp = 0;
 	int k;
 
 	k = 0;
