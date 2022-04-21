@@ -23,6 +23,7 @@ void more_numbers(void)
 		{
 		_putchar(Alp / 10 + '0');
 		_putchar(Alp % 10 + '0');
+		Alp += 1;
 		}
 		_putchar('\n');
 		k += 1;
