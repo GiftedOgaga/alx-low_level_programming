@@ -20,8 +20,8 @@ void more_numbers(void)
 		}
 		if (Alpha > 9)
 		{
-			_putchar(Alpha / 10 + '0');
-			_putchar(Alpha % 10 + '0');
+			_putchar((Alpha / 10) + '0');
+			_putchar((Alpha % 10) + '0');
 		}
 		_putchar('\n');
 		k += 1;
