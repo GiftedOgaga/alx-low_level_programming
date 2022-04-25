@@ -20,9 +20,7 @@ char *leet(char *s)
 		for (j = 0; j < 5; j++)
 		{
 			if (s[i] == array_low[i] || s[i] == array_up[j])
-			{
 				s[i] = array_leet[j];
-			}
 		}
 		i++;
 	}
