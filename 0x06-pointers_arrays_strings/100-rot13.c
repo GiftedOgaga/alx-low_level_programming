@@ -24,8 +24,7 @@ s[i] = string_rot13[j];
 break;
 }
 j++;
-}
-while (string_alpha[j] != '\0');
+} while (string_alpha[j] != '\0');
 j = 0;
 i++;
 }
