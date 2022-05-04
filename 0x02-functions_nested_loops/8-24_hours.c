@@ -14,7 +14,7 @@ void jack_bauer(void)
 	{
 		for (j = 0; j < 60; j++)
 		{
-			if ((i < 10) || (j < 10))
+			if ((i < 10) && (j < 10))
 			{
 				_putchar('0');
 				_putchar(i + '0');
@@ -23,13 +23,31 @@ void jack_bauer(void)
 				_putchar(j + '0');
 				_putchar('\n');
 			}
-			else if ((i > 9) || (j > 9))
+			else if ((i > 9) && (j > 9))
 			{
 				_putchar(i / 10 + '0');
 				_putchar(i % 10 + '0');
 				_putchar(':');
 				_putchar(j / 10 + '0');
 				_putchar(j % 10 + '0');
+				_putchar('\n');
+			}
+			else if ((i < 10) && (j > 9))
+			{
+				_putchar('0');
+				_putchar(i + '0');
+				_putchar(':');
+				_putchar(j / 10 + '0');
+				_pitchar(j % 10 + '0');
+				_putchar('\n');
+			}
+			else if ((i > 9) && (j < 10))
+			{
+				_putchar(i / 10 + '0');
+				_putchar(i % 10 + '0');
+				_putchar(':');
+				_putchar('0');
+				_putchar(j + '0');
 				_putchar('\n');
 			}
 		}
