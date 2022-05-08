@@ -10,5 +10,9 @@
 
 int main(int argc, char **argv)
 {
-	return (argv[0]);
+	if (argc > 0)
+	{
+	printf("%s\n",arg[0]);
+	return (0);
+	}
 }
