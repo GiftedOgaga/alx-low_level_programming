@@ -5,7 +5,7 @@
  * main-Entry point
  * @argc:first parameter
  * @argv:second parameter
- * Return: 1 on success
+ * Return: 0 on success
  */
 
 int main(int argc, char **argv)
