@@ -19,15 +19,15 @@ char *create_array(unsigned int size, char c)
 		return (0);
 	}
 	array = malloc(sizeof(char) * size);
+	if (array == 0)
+	{
+		return (0);
+	}
 	for (i = 0; i < size ; i++)
 	{
 		*(array + i) = c;
 	}
 	*(array + i) = '\0';
-	if (array == 0)
-	{
-		return (0);
-	}
 	return (array);
 }
 
