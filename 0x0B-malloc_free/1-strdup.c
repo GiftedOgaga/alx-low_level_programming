@@ -22,7 +22,7 @@ char *_strdup(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 		;
 	/* alocate space to str1 equivalent to the lenght of the given string */
-	str1 = malloc(sizeof(char) * i);
+	str1 = malloc((sizeof(char) * i) + 1);
 	if (str1 == NULL)
 	{
 		return (0);
@@ -31,5 +31,6 @@ char *_strdup(char *str)
 	{
 		str1[j] = str[j];
 	}
+	str1[j] = '\0';
 	return (str1);
 }
