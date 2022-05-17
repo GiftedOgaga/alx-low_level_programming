@@ -4,6 +4,7 @@
 /**
  * sum_them_all-function that returns sum of all its parameters
  * @n:numbers of parameters
+ * @...:A variable number of arguments
  * Return:sum fonparameters
  */
 
@@ -11,7 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list argstosum;
-	int sum;
+	unsigned sum = 0;
 
 	va_start(argstosum, n);
 
