@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
-
+#include <string.h>
 /**
  *init_dog - a function that initializes a fuction dog
  *@d: a pointer to struct dog
@@ -12,7 +12,7 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *d = {"name", 0, 0};
+	strcpy(d->name = "name");
 	d->age = age;
 	d->owner = owner;
 }
