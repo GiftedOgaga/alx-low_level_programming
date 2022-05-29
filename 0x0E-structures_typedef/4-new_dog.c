@@ -4,7 +4,7 @@
 
 /**
  * new_dog - a function that prints a new dog
- * * @name: first member
+ * @name: first member
  * @age: second member
  * @owner: third member
  * Return: newdog
@@ -32,7 +32,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(newdog);
 		return (NULL);
 	}
-	for (k = 0; k < i; k++)
+	for (k = 0; k <= i; k++)
 	{
 		newdog->name[k] = name[k];
 	}
@@ -45,7 +45,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(newdog);
 		return (NULL);
 	}
-	for (k = 0; k < j; k++)
+	for (k = 0; k <= j; k++)
 	{
 		newdog->owner[k] = owner[k];
 	}
