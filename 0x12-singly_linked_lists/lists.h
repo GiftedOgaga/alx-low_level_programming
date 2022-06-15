@@ -5,20 +5,20 @@
 #include<stdlib.h>
 
 /**
- *  *struct list_s - singly linked list
- *   *@str: string - placed in memory
- *    *@len: length of the string
- *     *@next: next point in the node
- *      *Author: Onyiana
- *       *Description: singly linked list structure
- *        *for Holberton project
- *         */
+ * struct list_s - singly linked list
+ * @str: string - placed in memory
+ * @len: length of the string
+ * @next: next point in the node
+ * Author: Onyiana
+ * Description: singly linked list structure
+ * for Holberton project
+ */
 typedef struct list_s
 {
 	char *str;
 	unsigned int len;
 	struct list_s *next;
-}list_t;
+} list_t;
 void liebre_tortuga(void) __attribute__ ((constructor));
 list_t *add_node(list_t **head, const char *str);
 void free_list(list_t *head);
